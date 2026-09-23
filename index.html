@@ -304,26 +304,32 @@
       }
     }
 
-    .gallery-img {
-     width: 100%;
-      height: 350px;
-      object-fit: cover;
-      display: block;
-      border-radius: 18px;
-      margin-bottom: 30px;
-     transition: transform 0.3s ease;
-  }
+   .gallery-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
 
-   .gallery-img:hover {
-    transform: scale(1.04);
-  }
+.gallery-img:hover {
+  transform: scale(1.04);
+}
 
-  .gallery .photo-placeholder {
+.gallery .photo-placeholder {
   height: auto;
   min-height: 0;
-  background: none;
+  background: transparent;
   padding: 0;
   margin: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
     
   </style>
@@ -465,9 +471,7 @@
     <img src="giardino.JPG" alt="Giardino" style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">   
     <div class="gallery"> 
 
-    <img src="giardino2.JPG" alt="Giardino" style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">   
-    <div class="gallery"> 
-          
+     <img src="giardino2.JPG" alt="Giardino" style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px; border:none; box-shadow:none; outline:none;">          
     </div>
 
   </section>
