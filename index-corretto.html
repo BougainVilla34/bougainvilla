@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BougainVilla San Teodoro | Casa Vacanza in Sardegna</title>
+
+  <meta name="description" content="BougainVilla a San Teodoro, Sardegna. Una casa vacanza accogliente vicino alle splendide spiagge e a La Cinta.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3d3d3d;
+      background: #fffdf9;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 253, 249, 0.97);
+      border-bottom: 1px solid #eee5dc;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #4d5144;
+      text-decoration: none;
+      margin: 0 13px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(
+        rgba(255, 250, 244, 0.72),
+        rgba(255, 250, 244, 0.72)
+      );
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 82px);
+      font-weight: normal;
+      color: #8c5d4d;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .hero h2 {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: normal;
+      color: #555b4c;
+      margin: 5px 0 25px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 28px;
+      background: #a56b57;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 25px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      font-weight: normal;
+      color: #8c5d4d;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+      color: #666;
+      font-size: 17px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .photo-placeholder {
+      height: 420px;
+      border-radius: 18px;
+      background: linear-gradient(
+        rgba(236, 226, 216, 0.9),
+        rgba(236, 226, 216, 0.9)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #80695e;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      background: #f5eee7;
+      text-align: center;
+      max-width: none;
+    }
+
+    .highlight h2 {
+      color: #8c5d4d;
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .service {
+      background: white;
+      padding: 28px 15px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      margin: 5px 0;
+      color: #8c5d4d;
+      font-size: 19px;
+      font-weight: normal;
+    }
+
+    .villa {
+      background: #f3f0e8;
+      max-width: none;
+    }
+
+    .villa-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .villa-box {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    }
+
+    .villa-photo {
+      height: 350px;
+      background: linear-gradient(
+        rgba(235, 229, 216, 0.9),
+        rgba(235, 229, 216, 0.9)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #80695e;
+      font-size: 20px;
+    }
+
+    .villa-content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .villa-content h2 {
+      font-size: 36px;
+      font-weight: normal;
+      color: #8c5d4d;
+      margin-top: 0;
+    }
+
+    .location {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .location h2 {
+      font-size: 36px;
+      font-weight: normal;
+      color: #8c5d4d;
+    }
+
+    .contact {
+      background: #eee5dc;
+      max-width: none;
+      text-align: center;
+    }
+
+    .contact-inner {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact h2 {
+      color: #8c5d4d;
+      font-size: 38px;
+      font-weight: normal;
+    }
+
+    .whatsapp {
+      background: #4d9b69;
+    }
+
+    footer {
+      background: #4d5144;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      nav {
+        padding: 12px 5px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 65vh;
+        padding: 60px 20px;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      .section-title {
+        font-size: 31px;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .photo-placeholder,
+      .villa-photo {
+        height: 280px;
+      }
+
+      .villa-content {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        font-size: 11px;
+        margin: 0 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#bougainvilla">BougainVilla</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#smeralda">Villa Smeralda</a>
+    <a href="#san-teodoro">San Teodoro</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>BougainVilla</h1>
+      <h2>Casa Vacanza a San Teodoro</h2>
+
+      <p>
+        Un angolo di tranquillità nel cuore della Sardegna,
+        dove vivere il mare, la natura e la bellezza di San Teodoro.
+      </p>
+
+      <a href="#bougainvilla" class="button">
+        Scopri BougainVilla
+      </a>
+    </div>
+  </header>
+
+  <section id="bougainvilla">
+
+    <h2 class="section-title">
+      Benvenuti a BougainVilla
+    </h2>
+
+    <p class="section-subtitle">
+      La tua casa per una vacanza a San Teodoro
+    </p>
+
+    <div class="intro">
+      <p>
+        BougainVilla è una casa vacanza pensata per chi desidera
+        trascorrere momenti di relax in uno degli angoli più belli
+        della Sardegna.
+      </p>
+
+      <p>
+        Qui potrai alternare giornate sulle splendide spiagge di
+        San Teodoro a piacevoli momenti di tranquillità,
+        circondato dal verde e dalla bellezza della natura.
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <img src="bougainvilla-principale.jpg"
+         alt="BougainVilla a San Teodoro"
+         style="width:100%; height:auto; display:block; border-radius:18px;">
+  </section>
+
+  <section class="highlight">
+
+    <h2>
+      Il tuo soggiorno a BougainVilla
+    </h2>
+
+    <p class="intro">
+      Un appartamento accogliente e confortevole,
+      ideale per vivere San Teodoro sentendosi a casa.
+    </p>
+
+    <a href="#contatti" class="button">
+      Informazioni e prenotazioni
+    </a>
+
+  </section>
+
+  <section id="servizi">
+
+    <h2 class="section-title">
+      I nostri servizi
+    </h2>
+
+    <p class="section-subtitle">
+      Tutto ciò che serve per una vacanza piacevole e rilassante.
+    </p>
+
+    <div class="services">
+
+      <div class="service">
+        <div class="service-icon">📶</div>
+        <h3>Wi-Fi</h3>
+        <p>Connessione Wi-Fi disponibile.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">❄️</div>
+        <h3>Aria condizionata</h3>
+        <p>Comfort anche nelle giornate più calde.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🚗</div>
+        <h3>Parcheggio</h3>
+        <p>Parcheggio disponibile per gli ospiti.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🌿</div>
+        <h3>Giardino</h3>
+        <p>Spazi esterni per rilassarsi e godersi la vacanza.</p>
+      </div>
+
+    </div>
+
+    <img src="camera matrimoniale.JPG" alt="Camera matrimoniale"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="cucina.JPG" alt="Cucina"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="soggiorno e terrazzo esterno.JPG" alt="Soggiorno"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="soggiorno2.JPG" alt="Soggiorno"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="soggiorno3.JPG" alt="Soggiorno"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="terrazza2.JPG" alt="Terrazza"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="esterno.JPG" alt="Terrazza"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="giardino.JPG" alt="Giardino"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="giardino2.JPG" alt="Giardino"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">
+      Il mare di San Teodoro
+    </h2>
+
+    <p class="section-subtitle">
+      Spiagge incantevoli e acque cristalline a pochi minuti da BougainVilla.
+    </p>
+
+    <img src="lacinta1.jpg" alt="La Cinta"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+    <img src="cala suaraccia.jpg" alt="Cala Suaraccia"
+         style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+  </section>
+
+  <section id="smeralda" class="villa">
+
+    <div class="villa-inner">
+
+      <h2 class="section-title">
+        Scopri anche Villa Smeralda
+      </h2>
+
+      <p class="section-subtitle">
+        Una villetta indipendente, separata da BougainVilla.
+      </p>
+
+      <div class="villa-box">
+
+        <div class="villa-photo">
+          <span>
+            Qui inseriremo le foto di Villa Smeralda
+          </span>
+        </div>
+
+        <div class="villa-content">
+
+          <h2>
+            Villa Smeralda
+          </h2>
+
+          <p>
+            Se cerchi una soluzione indipendente e desideri
+            maggiore spazio e privacy, scopri anche Villa Smeralda.
+          </p>
+
+          <p>
+            Una seconda proposta per vivere una vacanza
+            speciale a San Teodoro.
+          </p>
+
+          <a href="#contatti" class="button">
+            Scopri Villa Smeralda
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="san-teodoro">
+
+    <div class="location">
+
+      <h2>
+        San Teodoro e La Cinta
+      </h2>
+
+      <p>
+        San Teodoro è una delle località più amate della Sardegna,
+        famosa per il suo mare cristallino, le spiagge bianche
+        e la natura incontaminata.
+      </p>
+
+      <p>
+        Tra le meraviglie della zona c'è La Cinta, una delle
+        spiagge più conosciute e suggestive del territorio.
+      </p>
+
+      <p>
+        Durante il soggiorno potrai scoprire il mare, il centro
+        di San Teodoro, i ristoranti, i locali e le tante bellezze
+        naturali della zona.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="contatti" class="contact">
+
+    <div class="contact-inner">
+
+      <h2>
+        Prenota il tuo soggiorno
+      </h2>
+
+      <p>
+        Vuoi ricevere maggiori informazioni su BougainVilla
+        o su Villa Smeralda?
+      </p>
+
+      <p>
+        Contattaci per disponibilità, informazioni e prenotazioni.
+      </p>
+
+      <a href="#" class="button whatsapp">
+        💬 Contattaci su WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      ©️ BougainVilla San Teodoro
+    </p>
+
+    <p>
+      Casa Vacanza · San Teodoro · Sardegna
+    </p>
+
+  </footer>
+
+</body>
+</html>
