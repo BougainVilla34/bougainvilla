@@ -752,6 +752,40 @@
 </p>
     
       </footer>
+<script>
+document.querySelectorAll('.gallery img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    const overlay = document.createElement('div');
+
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.background = 'rgba(0,0,0,0.9)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = '9999';
+    overlay.style.cursor = 'pointer';
+    overlay.style.padding = '20px';
+
+    const bigImage = document.createElement('img');
+    bigImage.src = img.src;
+    bigImage.style.maxWidth = '95%';
+    bigImage.style.maxHeight = '95%';
+    bigImage.style.objectFit = 'contain';
+    bigImage.style.borderRadius = '12px';
+
+    overlay.appendChild(bigImage);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+  });
+});
+</script>
 
 </body>
 </html>
