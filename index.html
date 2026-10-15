@@ -322,11 +322,14 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .photo-placeholder,
-      .villa-photo {
-        height: 280px;
-      }
-.gallery {
+  .photo-placeholder,
+  .villa-photo {
+  height: auto;
+  min-height: 280px;
+  box-sizing: border-box;
+}
+      
+  .gallery {
   grid-template-columns: 1fr;
   gap: 15px;
 }
