@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>San Teodoro e dintorni | BougainVilla</title>
+
+  <meta name="description"
+        content="Scopri San Teodoro, le sue spiagge più belle, le escursioni, la natura e le esperienze da vivere durante una vacanza in Sardegna.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #45433d;
+      background: #fdfbf7;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 75px 20px 65px;
+      text-align: center;
+      background: #edf0e8;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      color: #68765e;
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: normal;
+      line-height: 1.2;
+    }
+
+    header p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    nav {
+      padding: 16px 12px;
+      text-align: center;
+      background: #fdfbf7;
+      border-bottom: 1px solid #e8e5dc;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 12px;
+      color: #68765e;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 65px 24px;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: #68765e;
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: normal;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      color: #68765e;
+      font-size: 23px;
+      font-weight: normal;
+    }
+.beach h3,
+.activity h3 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.beach p,
+.activity p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.intro {
+  text-align: center;
+}
+    
+    p {
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin: 30px 0;
+    }
+
+    .beaches {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .beach {
+      padding: 26px;
+      background: #ffffff;
+      border: 1px solid #eeece4;
+      border-radius: 16px;
+    }
+
+    .beach p {
+      margin-bottom: 0;
+    }
+    .beach img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+    .soft {
+      background: #f1f2ec;
+    }
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .activity {
+      padding: 10px 4px;
+    }
+
+    .activity h3 {
+      font-size: 21px;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 18px 22px;
+      background: #f1f2ec;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 6px;
+      padding: 13px 27px;
+      color: #ffffff;
+      background: #68765e;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.25s ease;
+    }
+
+    .button:hover {
+      background: #596851;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #77766e;
+      background: #edf0e8;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #68765e;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 55px 20px;
+      }
+
+      section {
+        padding: 45px 20px;
+      }
+
+      .beaches,
+      .activities {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin: 5px 8px;
+        font-size: 14px;
+      }
+
+      .photo {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>San Teodoro e dintorni</h1>
+    <p>
+      Tra spiagge dalle acque cristalline, paesaggi mediterranei
+      e momenti da vivere con calma, scopri la bellezza della
+      costa nord-orientale della Sardegna.
+    </p>
+    <a href="#territorio" class="button">Scopri il territorio</a>
+  </header>
+
+  <nav aria-label="Navigazione della pagina">
+    <a href="#territorio">San Teodoro</a>
+    <a href="#spiagge">Le spiagge</a>
+    <a href="#esperienze">Cosa fare</a>
+    <a href="#dintorni">I dintorni</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <main>
+
+    <section id="territorio">
+      <div class="intro">
+        <h2>Un angolo di Sardegna da scoprire</h2>
+
+        <p>
+          San Teodoro si trova sulla costa nord-orientale della
+          Sardegna, in un territorio dove il mare incontra la
+          macchia mediterranea, le lagune e i paesaggi dell'entroterra.
+        </p>
+
+        <p>
+          Il paese è un punto di partenza ideale per alternare
+          giornate di mare, passeggiate nella natura e serate
+          tra le vie del centro, con negozi, locali e ristoranti
+          che animano soprattutto la stagione estiva.
+        </p>
+
+        <p>
+          Ogni giornata può avere un ritmo diverso: una mattina
+          in spiaggia, un'escursione lungo la costa oppure una
+          serata alla scoperta dei sapori e delle tradizioni locali.
+        </p>
+      </div>
+
+      <img
+  class="photo"
+  src="spiaggia-la-cinta.jpeg"
+  alt="Vista dall'alto della spiaggia La Cinta, del mare turchese e della laguna di San Teodoro"
+  loading="lazy">
+      
+    <section id="spiagge" class="soft">
+      <h2>Le spiagge da non perdere</h2>
+
+      <p class="intro center">
+        Sabbia chiara, acque trasparenti e panorami sempre diversi:
+        le spiagge sono tra i tesori più belli di San Teodoro.
+      </p>
+
+      <div class="beaches">
+
+        <article class="beach">
+          <h3>La Cinta</h3>
+          <p>
+      È la spiaggia simbolo di San Teodoro: una lunga distesa di sabbia
+      chiara e finissima, bagnata da acque trasparenti e con fondali
+      sabbiosi che digradano dolcemente. Alle spalle si trova la laguna,
+      mentre nelle giornate limpide lo sguardo raggiunge l'isola di Tavolara.
+
+      La Cinta è adatta a chi ama passeggiare sul bagnasciuga, trascorrere
+      una giornata al mare in famiglia o praticare attività acquatiche
+      nelle aree consentite. In spiaggia sono presenti bar, punti ristoro,
+      stabilimenti con noleggio di ombrelloni e attrezzature e servizi
+      per i visitatori.
+
+      Sono disponibili parcheggi presso gli accessi, generalmente a
+      pagamento durante la stagione estiva. Nei periodi più frequentati
+      è consigliabile arrivare presto e verificare in anticipo le
+      condizioni di accesso e i servizi disponibili.
+     </p>
+        </article>
+
+        <article class="beach">
+          <h3>Cala Brandinchi</h3>
+          <img src="Cala_Brandinchi_panoramio.jpg"
+            alt="La spiaggia di Cala Brandinchi con sabbia chiara e mare turchese"
+     loading="lazy">    
+          <p>
+  Conosciuta anche come “piccola Tahiti”, Cala Brandinchi è famosa
+  per la sabbia chiara, le acque turchesi e i fondali bassi e sabbiosi.
+  Il paesaggio ricorda una laguna tropicale e offre scorci suggestivi
+  verso l'isola di Tavolara.
+
+  È una spiaggia apprezzata da famiglie e da chi desidera nuotare
+  e rilassarsi in un ambiente naturale. Nei periodi di maggiore
+  affluenza è importante organizzare la visita in anticipo.
+
+  Durante la stagione estiva l'accesso può essere regolamentato
+  e può essere necessaria la prenotazione. Prima di partire,
+  verifica le regole aggiornate, la disponibilità e le modalità
+  di accesso sul sito turistico ufficiale di San Teodoro.
+</p>
+        </article>
+
+        <article class="beach">
+          <h3>Lu Impostu</h3>
+          <img src="Spiaggia_di_Lu_Impostu,_San_Teodoro.jpg"
+            alt="La spiaggia di Lu Impostu a San Teodoro, con sabbia chiara e mare turchese"
+     loading="lazy">   
+          <p>
+  Lu Impostu è una spiaggia ampia e luminosa, caratterizzata
+  da sabbia chiara e finissima, acque trasparenti e vegetazione
+  mediterranea. Il suo paesaggio naturale la rende una meta
+  ideale per chi desidera rilassarsi al mare e godersi i colori
+  della costa di San Teodoro.
+
+  I fondali sabbiosi e il panorama aperto sono particolarmente
+  suggestivi nelle giornate di sole. Durante l'estate la spiaggia
+  può essere molto frequentata e l'accesso può essere soggetto
+  a prenotazione o altre regole specifiche.
+
+  Prima della visita, verifica le disposizioni aggiornate,
+  le modalità di accesso e le informazioni sui parcheggi
+  attraverso il sito turistico ufficiale di San Teodoro.
+</p>
+        </article>
+
+        <article class="beach">
+          <h3>L'Isuledda</h3>
+          <p>
+  L'Isuledda è una spiaggia di sabbia chiara, circondata dalla
+  vegetazione mediterranea e affacciata su un mare dalle splendide
+  tonalità turchesi. Da qui si possono ammirare panorami suggestivi
+  verso l'isola di Tavolara e la costa circostante.
+
+  È una meta interessante per chi desidera trascorrere qualche ora
+  al mare, rilassarsi sulla sabbia o esplorare le acque con maschera
+  e boccaglio, dove le condizioni lo consentono.
+
+  Nei mesi estivi la zona può essere molto frequentata. Prima
+  di partire, è consigliabile informarsi sulle condizioni del mare,
+  sui servizi disponibili e sulle eventuali regole di accesso
+  e parcheggio.
+</p>
+        </article>
+
+        <article class="beach">
+          <h3>Cala d'Ambra</h3>
+          <p>
+  Cala d'Ambra si trova vicino al centro di San Teodoro ed è una
+  soluzione comoda per chi desidera trascorrere qualche ora al mare
+  senza allontanarsi troppo dal paese. La spiaggia è caratterizzata
+  da sabbia chiara e da un'atmosfera piacevole, ideale per alternare
+  il relax in riva al mare a una passeggiata tra le vie del centro.
+
+  La sua posizione permette di organizzare la giornata con maggiore
+  flessibilità, magari fermandosi in un locale o in un ristorante
+  prima o dopo il mare.
+
+  Prima della visita, verifica le condizioni del mare e le informazioni
+  aggiornate sui servizi e sulle possibilità di parcheggio.
+</p>
+        </article>
+
+        <article class="beach">
+          <h3>Capo Coda Cavallo</h3>
+          <p>
+  Capo Coda Cavallo è una delle zone costiere più suggestive
+  nei dintorni di San Teodoro, con promontori, piccole baie
+  e panorami spettacolari sull'isola di Tavolara e sull'area
+  marina protetta di Tavolara - Punta Coda Cavallo.
+
+  È una meta ideale per chi ama esplorare la costa, ammirare
+  il paesaggio e scoprire calette dalle acque cristalline.
+  Nelle giornate adatte, alcune zone si prestano anche
+  allo snorkeling, sempre rispettando le regole dell'area protetta.
+
+  Prima di partire, informati sulle condizioni del mare,
+  sulle possibilità di parcheggio e sulle eventuali limitazioni
+  di accesso, che possono variare in base alla stagione
+  e alla località scelta.
+</p>
+        </article>
+
+      </div>
+
+      <div class="notice">
+        <strong>Un consiglio prima di partire:</strong>
+        Cala Brandinchi e Lu Impostu possono essere soggette a
+        regole di accesso e prenotazione, soprattutto in estate.
+        Controlla sempre le disposizioni aggiornate sul
+        <a href="https://santeodoroturismo.it/" target="_blank"
+           rel="noopener noreferrer">sito turistico ufficiale di San Teodoro</a>.
+      </div>
+    </section>
+
+    <section id="esperienze">
+      <h2>Cosa fare a San Teodoro</h2>
+
+      <p class="intro center">
+        La vacanza non è soltanto mare: il territorio offre
+        tante occasioni per scoprire la Sardegna in modi diversi.
+      </p>
+
+      <div class="activities">
+
+        <article class="activity">
+          <h3>Escursioni in barca</h3>
+          <p>
+            Scopri la costa dal mare, ammira Tavolara e Molara
+            e valuta un'escursione organizzata nell'area marina
+            protetta, scegliendo operatori autorizzati.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3>Snorkeling e sport acquatici</h3>
+          <p>
+            Nelle giornate adatte, puoi esplorare i fondali
+            nelle zone consentite oppure provare attività come
+            kayak, vela e altri sport proposti dagli operatori locali.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3>Natura e passeggiate</h3>
+          <p>
+            Ritagliati del tempo per camminare lungo la costa,
+            osservare i paesaggi delle lagune e scoprire la
+            vegetazione mediterranea. Nelle zone umide, osserva
+            gli uccelli senza disturbare la fauna.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3>Il centro e le serate estive</h3>
+          <p>
+            Passeggia tra le vie del paese, visita i negozi,
+            fermati per un aperitivo o scegli un ristorante
+            per assaporare la cucina locale. In estate il centro
+            si anima con mercatini e iniziative stagionali.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3>Sapori della Sardegna</h3>
+          <p>
+            Approfitta della vacanza per conoscere le specialità
+            del territorio, tra piatti della tradizione,
+            prodotti locali e vini sardi.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3>Una giornata senza fretta</h3>
+          <p>
+            Non serve organizzare ogni momento: scegli una spiaggia,
+            goditi il panorama e lascia spazio a una sosta in un
+            locale o a una passeggiata al tramonto.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="dintorni" class="soft">
+  <div class="intro">
+
+    <h2>Alla scoperta dei dintorni</h2>
+
+    <h3>Tavolara e Molara</h3>
+    <p>
+      Di fronte alla costa si trovano le isole di Tavolara e Molara,
+      protagoniste di alcuni dei panorami più suggestivi della zona.
+      Un'escursione in barca permette di ammirare il mare da una
+      prospettiva diversa e di scoprire le bellezze dell'area marina
+      protetta, nel rispetto delle regole locali.
+    </p>
+
+    <h3>Monte Nieddu e l'entroterra</h3>
+    <p>
+      Per chi desidera alternare il mare alla natura, l'entroterra
+      offre paesaggi verdi, rilievi e scorci panoramici. Monte Nieddu
+      è una zona da conoscere attraverso percorsi ed escursioni
+      adatti alla propria esperienza, verificando prima le condizioni
+      dei sentieri e l'accessibilità.
+    </p>
+
+    <h3>Porto San Paolo</h3>
+    <p>
+      A breve distanza da San Teodoro, Porto San Paolo è una località
+      costiera da cui ammirare Tavolara e valutare escursioni in mare.
+      È una buona idea per organizzare una gita diversa dalla consueta
+      giornata in spiaggia.
+    </p>
+
+    <h3>Budoni e la sua costa</h3>
+    <p>
+      Nei dintorni si trova anche Budoni, con le sue spiagge, la
+      vegetazione mediterranea e il centro abitato. Può essere una
+      meta piacevole per una passeggiata o per trascorrere qualche
+      ora alla scoperta di un'altra località della costa.
+    </p>
+
+    <h3>Olbia e il centro storico</h3>
+    <p>
+      Per una gita tra negozi, piazze e ristoranti, puoi raggiungere
+      Olbia e passeggiare nel suo centro storico. È un'alternativa
+      interessante alla giornata di mare, soprattutto se vuoi
+      conoscere un altro volto della Sardegna nord-orientale.
+    </p>
+
+    <h3>Le località della costa</h3>
+    <p>
+      Ogni tratto di costa ha caratteristiche diverse: piccole baie,
+      spiagge ampie e punti panoramici. Puoi organizzare una gita
+      scegliendo la destinazione in base al tempo a disposizione,
+      alle condizioni del mare e alle indicazioni locali.
+    </p>
+
+  </div>
+</section>
+      
+      <section id="consigli">
+  <div class="intro">
+
+    <h2>Consigli utili per la tua vacanza</h2>
+
+    <p>
+      Per goderti al meglio San Teodoro e i suoi dintorni,
+      bastano alcuni piccoli accorgimenti che possono rendere
+      ogni giornata più semplice e piacevole.
+    </p>
+
+    <h3>Organizza la giornata al mare</h3>
+    <p>
+      Nei mesi estivi le spiagge più conosciute possono essere
+      molto frequentate. Prima di partire, controlla le eventuali
+      regole di accesso, le modalità di prenotazione e le
+      informazioni sui parcheggi.
+    </p>
+
+    <h3>Controlla il meteo e il mare</h3>
+    <p>
+      Vento e condizioni del mare possono cambiare i programmi,
+      soprattutto se desideri fare un'escursione in barca
+      o praticare attività acquatiche. Consulta le previsioni
+      aggiornate e segui sempre le indicazioni locali.
+    </p>
+
+    <h3>Rispetta la natura</h3>
+    <p>
+      Le spiagge, le dune e le lagune sono ambienti preziosi.
+      Rimani sui percorsi consentiti, non lasciare rifiuti
+      e non disturbare gli animali. Piccoli gesti aiutano
+      a conservare la bellezza di questo territorio.
+    </p>
+
+  </div>
+</section> 
+      <section id="contatti" class="center">
+      <h2>La tua vacanza comincia qui</h2>
+
+      <div class="intro">
+        <p>
+          Dopo una giornata alla scoperta di San Teodoro,
+          torna a goderti i tuoi spazi e la tranquillità
+          della tua casa vacanze.
+        </p>
+
+        <p>
+          BougainVilla e Villino Smeralda sono due soluzioni
+          indipendenti per vivere il territorio e organizzare
+          la vacanza secondo i tuoi ritmi.
+        </p>
+      </div>
+
+      <a href="https://bougainvillasanteodoro.com/"
+         class="button">
+        Torna a BougainVilla
+      </a>
+
+      <a href="https://wa.me/393489542642"
+         class="button">
+        Informazioni e prenotazioni
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      San Teodoro e dintorni · BougainVilla
+    </p>
+    <p>
+      <a href="https://bougainvillasanteodoro.com/">
+        Visita il sito principale
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
