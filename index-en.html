@@ -353,7 +353,46 @@
         margin: 0 3px;
       }
     }
-  </style>
+      .language-menu {
+  position: relative;
+  display: inline-block;
+}
+.language-button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+.language-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.language-options a {
+  display: block;
+  padding: 10px 12px;
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.language-options a:hover {
+  background: #f2f2f2;
+}
+.language-menu:hover .language-options,
+.language-menu:focus-within .language-options {
+  display: block;
+}
+    </style>
 </head>
 
 <body>
@@ -856,6 +895,18 @@ document.querySelectorAll('.gallery img').forEach(function(img) {
   });
 });
 </script>
-
+<script>
+  const languageButton = document.querySelector('.language-button');
+  const languageOptions = document.querySelector('.language-options');
+  languageButton.addEventListener('click', function () {
+    const isOpen = languageOptions.style.display === 'block';
+    languageOptions.style.display = isOpen ? 'none' : 'block';
+  });
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.language-menu')) {
+      languageOptions.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
