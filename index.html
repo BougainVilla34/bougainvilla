@@ -353,20 +353,70 @@
         margin: 0 3px;
       }
     }
+    .language-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.language-options a {
+  display: block;
+  padding: 10px 12px;
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.language-options a:hover {
+  background: #f2f2f2;
+}
+
+.language-menu:hover .language-options,
+.language-menu:focus-within .language-options {
+  display: block;
+}
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="#bougainvilla">BougainVilla</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#smeralda">Villino Smeralda</a>
-    <a href="san-teodoro.html">San Teodoro</a>
-    <a href="#contatti">Contatti</a>
-    <a href="index-en.html">🇬🇧 English</a>
-  </nav>
-
+ <nav>
+  <a href="#bougainvilla">BougainVilla</a>
+  <a href="#servizi">Servizi</a>
+  <a href="#smeralda">Villino Smeralda</a>
+  <a href="san-teodoro.html">San Teodoro</a>
+  <a href="#contatti">Contatti</a>
+  <div class="language-menu">
+    <button type="button" class="language-button">🌐 Lingua ▾</button>
+    <div class="language-options">
+      <a href="index.html">🇮🇹 Italiano</a>
+      <a href="index-en.html">🇬🇧 English</a>
+    </div>
+  </div>
+</nav>
+  
   <header class="hero">
     <div class="hero-content">
       <h1>BougainVilla</h1>
@@ -902,6 +952,18 @@ document.querySelectorAll('.gallery img').forEach(function(img) {
   });
 });
 </script>
-
+<script>
+  const languageButton = document.querySelector('.language-button');
+  const languageOptions = document.querySelector('.language-options');
+  languageButton.addEventListener('click', function () {
+    const isOpen = languageOptions.style.display === 'block';
+    languageOptions.style.display = isOpen ? 'none' : 'block';
+  });
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.language-menu')) {
+      languageOptions.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
