@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>San Teodoro and Surroundings | BougainVilla</title>
+
+  <meta name="description"
+content="Discover San Teodoro, its most beautiful beaches, excursions, nature and experiences to enjoy during a holiday in Sardinia.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #45433d;
+      background: #fdfbf7;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 75px 20px 65px;
+      text-align: center;
+      background: #edf0e8;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      color: #68765e;
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: normal;
+      line-height: 1.2;
+    }
+
+    header p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    nav {
+      padding: 16px 12px;
+      text-align: center;
+      background: #fdfbf7;
+      border-bottom: 1px solid #e8e5dc;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 12px;
+      color: #68765e;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 65px 24px;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: #68765e;
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: normal;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      color: #68765e;
+      font-size: 23px;
+      font-weight: normal;
+    }
+.beach h3,
+.activity h3 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.beach p,
+.activity p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.intro {
+  text-align: center;
+}
+    
+    p {
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin: 30px 0;
+    }
+
+    .beaches {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .beach {
+      padding: 26px;
+      background: #ffffff;
+      border: 1px solid #eeece4;
+      border-radius: 16px;
+    }
+
+    .beach p {
+      margin-bottom: 0;
+    }
+    .beach img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+    .soft {
+      background: #f1f2ec;
+    }
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .activity {
+      padding: 10px 4px;
+    }
+
+    .activity h3 {
+      font-size: 21px;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 18px 22px;
+      background: #f1f2ec;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 6px;
+      padding: 13px 27px;
+      color: #ffffff;
+      background: #68765e;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.25s ease;
+    }
+
+    .button:hover {
+      background: #596851;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #77766e;
+      background: #edf0e8;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #68765e;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 55px 20px;
+      }
+
+      section {
+        padding: 45px 20px;
+      }
+
+      .beaches,
+      .activities {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin: 5px 8px;
+        font-size: 14px;
+      }
+
+      .photo {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>San Teodoro and Surroundings</h1>
+    <p>
+  With crystal-clear beaches, Mediterranean landscapes
+  and moments to enjoy at a slower pace, discover the beauty
+  of Sardinia’s north-eastern coast.
+</p>
+<a href="#territorio" class="button">Discover the Area</a>
+  </header>
+
+  <nav aria-label="Page navigation">
+    <a href="#territorio">San Teodoro</a>
+    <a href="#spiagge">Beaches</a>
+    <a href="#esperienze">Things to Do</a>
+    <a href="#dintorni">Nearby Attractions</a>
+    <a href="#contatti">Contact</a>
+  </nav>
+  
+  <main>
+
+  <section id="territorio">
+  <div class="intro">
+    <h2>A Corner of Sardinia to Discover</h2>
+
+    <p>
+      San Teodoro lies on the north-eastern coast of Sardinia,
+      in an area where the sea meets Mediterranean scrubland,
+      lagoons and the beautiful landscapes of the inland region.
+    </p>
+
+    <p>
+      The town is an ideal starting point for enjoying days by the sea,
+      walks in nature and evenings exploring the town centre, with shops,
+      bars and restaurants that come alive especially during the summer.
+    </p>
+
+    <p>
+      Every day can offer a different experience: a morning on the beach,
+      an excursion along the coast, or an evening discovering local flavours
+      and traditions.
+    </p>
+  </div>
+
+  <img
+    class="photo"
+    src="spiaggia-la-cinta.jpeg"
+    alt="Aerial view of La Cinta Beach, turquoise sea and the San Teodoro lagoon"
+    loading="lazy">
+
+</section>
+
+<section id="spiagge" class="soft">
+  <h2>Beaches You Shouldn't Miss</h2>
+
+  <p class="intro center">
+    Pale sand, crystal-clear waters and ever-changing scenery:
+    the beaches are among San Teodoro's greatest treasures.
+  </p>
+
+  <div class="beaches">
+
+    <article class="beach">
+      <h3>La Cinta</h3>
+      <p>
+        La Cinta is San Teodoro's iconic beach: a long stretch of fine,
+        pale sand washed by clear waters, with sandy seabeds that slope
+        gently into the sea. Behind the beach lies the lagoon, while on
+        clear days you can see Tavolara Island.
+
+        La Cinta is perfect for strolling along the shoreline, enjoying
+        a family beach day or taking part in water activities where permitted.
+        The beach has bars, refreshment points, beach clubs with sunbed
+        and equipment rentals, and visitor facilities.
+
+        Parking is available near the entrances and is generally paid
+        during the summer season. During busy periods, arriving early
+        is recommended. Check access conditions and available services
+        in advance.
+      </p>
+    </article>
+
+    <article class="beach">
+      <h3>Cala Brandinchi</h3>
+      <img src="Cala_Brandinchi_panoramio.jpg"
+        alt="Cala Brandinchi Beach with pale sand and turquoise water"
+        loading="lazy">
+      <p>
+        Also known as “Little Tahiti”, Cala Brandinchi is famous for its
+        pale sand, turquoise waters and shallow sandy seabed. Its scenery
+        resembles a tropical lagoon, with beautiful views towards Tavolara Island.
+
+        It is popular with families and anyone looking to swim and relax
+        in a natural setting. During busy periods, it is important to plan
+        your visit in advance.
+
+        Summer access may be regulated and reservations may be required.
+        Before setting off, check the latest rules, availability and access
+        arrangements on the official San Teodoro tourism website.
+      </p>
+    </article>
+
+    <article class="beach">
+      <h3>Lu Impostu</h3>
+      <img src="Spiaggia_di_Lu_Impostu,_San_Teodoro.jpg"
+        alt="Lu Impostu Beach in San Teodoro, with pale sand and turquoise water"
+        loading="lazy">
+      <p>
+        Lu Impostu is a wide, sunlit beach with fine, pale sand,
+        crystal-clear water and Mediterranean vegetation. Its natural
+        scenery makes it an ideal destination for relaxing by the sea
+        and enjoying the colours of the San Teodoro coastline.
+
+        The sandy seabed and open views are especially beautiful on sunny
+        days. In summer, the beach can be very busy and access may be
+        subject to reservations or other specific rules.
+
+        Before visiting, check the latest regulations, access arrangements
+        and parking information on the official San Teodoro tourism website.
+      </p>
+    </article>
+
+    <article class="beach">
+      <h3>L'Isuledda</h3>
+      <p>
+        L'Isuledda is a pale-sand beach surrounded by Mediterranean
+        vegetation and overlooking a sea with beautiful turquoise hues.
+        From here, you can enjoy lovely views of Tavolara Island and
+        the surrounding coastline.
+
+        It is a great choice for spending a few hours by the sea,
+        relaxing on the sand or exploring the water with a mask and
+        snorkel when conditions allow.
+
+        The area can be very busy during the summer months. Before
+        visiting, check sea conditions, available services and any
+        access or parking restrictions.
+      </p>
+    </article>
+
+    <article class="beach">
+      <h3>Cala d'Ambra</h3>
+      <p>
+        Cala d'Ambra is close to San Teodoro town centre, making it a
+        convenient choice for anyone who wants to spend a few hours
+        by the sea without travelling far from town. The beach has
+        pale sand and a pleasant atmosphere, ideal for combining
+        relaxation by the water with a stroll through the town centre.
+
+        Its location makes it easy to plan a flexible day, perhaps
+        stopping at a café or restaurant before or after the beach.
+
+        Before visiting, check sea conditions and the latest information
+        about services and parking options.
+      </p>
+    </article>
+
+    <article class="beach">
+      <h3>Capo Coda Cavallo</h3>
+      <p>
+        Capo Coda Cavallo is one of the most scenic coastal areas near
+        San Teodoro, with headlands, small bays and spectacular views
+        of Tavolara Island and the Tavolara–Punta Coda Cavallo Marine
+        Protected Area.
+
+        It is ideal for exploring the coastline, admiring the scenery
+        and discovering coves with crystal-clear water. In suitable
+        conditions, some areas are also great for snorkelling, always
+        respecting the rules of the protected area.
+
+        Before setting off, check sea conditions, parking options and
+        any access restrictions, which may vary by season and location.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="notice">
+    <strong>A tip before you go:</strong>
+    Access to Cala Brandinchi and Lu Impostu may be regulated and
+    reservations may be required, especially in summer. Always check
+    the latest rules on the
+    <a href="https://santeodoroturismo.it/" target="_blank"
+       rel="noopener noreferrer">official San Teodoro tourism website</a>.
+  </div>
+  
+</section>
+<section id="esperienze">
+  <h2>Things to Do in San Teodoro</h2>
+
+  <p class="intro center">
+    A holiday is about more than just the sea: the surrounding area
+    offers many ways to discover Sardinia and enjoy different experiences.
+  </p>
+
+  <div class="activities">
+
+    <article class="activity">
+      <h3>Boat Trips</h3>
+      <p>
+        Discover the coastline from the sea, admire Tavolara and Molara,
+        and consider joining an organised excursion in the marine
+        protected area with an authorised operator.
+      </p>
+    </article>
+
+    <article class="activity">
+      <h3>Snorkelling and Water Sports</h3>
+      <p>
+        When conditions are suitable, explore the seabed in permitted
+        areas or try activities such as kayaking, sailing and other
+        water sports offered by local operators.
+      </p>
+    </article>
+
+    <article class="activity">
+      <h3>Nature and Walks</h3>
+      <p>
+        Take some time to walk along the coast, admire the lagoon
+        landscapes and discover the Mediterranean vegetation.
+        In wetland areas, observe birds without disturbing wildlife.
+      </p>
+    </article>
+
+    <article class="activity">
+      <h3>The Town Centre and Summer Evenings</h3>
+      <p>
+        Stroll through the town's streets, browse the shops, stop
+        for an aperitif or choose a restaurant to enjoy local cuisine.
+        In summer, the town centre comes alive with markets and
+        seasonal events.
+      </p>
+    </article>
+
+    <article class="activity">
+      <h3>The Flavours of Sardinia</h3>
+      <p>
+        Make the most of your holiday by discovering local specialities,
+        from traditional dishes and regional products to Sardinian wines.
+      </p>
+    </article>
+
+    <article class="activity">
+      <h3>A Relaxed Day at Your Own Pace</h3>
+      <p>
+        There's no need to plan every moment: choose a beach, enjoy
+        the scenery and leave time for a stop at a café or a walk
+        at sunset.
+      </p>
+    </article>
+
+  </div>
+  </section>
+
+
+    <section id="dintorni" class="soft">
+  <div class="intro">
+    <h2>Discover the Surrounding Area</h2>
+    <h3>Tavolara and Molara</h3>
+    <p>
+      Just off the coast lie the islands of Tavolara and Molara,
+      offering some of the most breathtaking views in the area.
+      A boat trip is a wonderful way to admire the sea from a
+      different perspective and discover the beauty of the
+      marine protected area while respecting local regulations.
+    </p>
+    <h3>Monte Nieddu and the Inland Landscapes</h3>
+    <p>
+      If you would like to combine beach time with nature,
+      the inland area offers green landscapes, hills and
+      panoramic views. Monte Nieddu is worth exploring along
+      routes and trails suited to your experience. Always
+      check trail conditions and accessibility beforehand.
+    </p>
+    <h3>Porto San Paolo</h3>
+    <p>
+      A short distance from San Teodoro, Porto San Paolo is a
+      coastal destination with beautiful views of Tavolara and
+      opportunities for boat trips. It is a great choice for
+      a day out that is different from a typical beach day.
+    </p>
+    <h3>Budoni and Its Coastline</h3>
+    <p>
+      Nearby Budoni offers beaches, Mediterranean vegetation
+      and a charming town centre. It is a pleasant destination
+      for a walk or for spending a few hours discovering another
+      part of this stretch of coastline.
+    </p>
+    <h3>Olbia and the Historic Centre</h3>
+    <p>
+      For a day of shopping, squares and restaurants, head to
+      Olbia and explore its historic centre. It is an interesting
+      alternative to a day at the beach, especially if you would
+      like to discover another side of north-eastern Sardinia.
+    </p>
+    <h3>Coastal Destinations</h3>
+    <p>
+      Every stretch of coastline has its own character, from
+      small bays and wide beaches to scenic viewpoints. Plan
+      a day trip according to the time you have available,
+      sea conditions and local advice.
+    </p>
+  </div>
+</section>
+<section id="consigli">
+  <div class="intro">
+    <h2>Useful Tips for Your Holiday</h2>
+    <p>
+      To make the most of San Teodoro and its surroundings,
+      a few simple tips can help make every day easier
+      and more enjoyable.
+    </p>
+    <h3>Plan Your Beach Day</h3>
+    <p>
+      During the summer months, the most popular beaches can
+      get very busy. Before setting off, check any access rules,
+      reservation requirements and parking information.
+    </p>
+    <h3>Check the Weather and Sea Conditions</h3>
+    <p>
+      Wind and sea conditions can affect your plans, especially
+      if you are considering a boat trip or water sports.
+      Check the latest forecasts and always follow local advice.
+    </p>
+    <h3>Respect Nature</h3>
+    <p>
+      Beaches, dunes and lagoons are precious natural environments.
+      Stay on permitted paths, take your rubbish with you and
+      avoid disturbing wildlife. Small actions help preserve
+      the beauty of this area.
+    </p>
+  </div>
+</section>
+<section id="contatti" class="center">
+  <h2>Your Holiday Starts Here</h2>
+  <div class="intro">
+    <p>
+      After a day exploring San Teodoro, return to the comfort
+      of your own space and enjoy the peace and quiet of
+      your holiday home.
+    </p>
+    <p>
+      BougainVilla and Villino Smeralda are two independent
+      holiday homes that let you explore the area and enjoy
+      your holiday at your own pace.
+    </p>
+  </div>
+  <a href="https://bougainvillasanteodoro.com/"
+     class="button">
+    Back to BougainVilla
+  </a>
+  <a href="https://wa.me/393489542642"
+     class="button">
+    Information and Bookings
+  </a>
+</section>
+</main>
+<footer>
+  <p>
+    San Teodoro and Surroundings · BougainVilla
+  </p>
+  <p>
+    <a href="https://bougainvillasanteodoro.com/">
+      Visit the Main Website
+    </a>
+  </p>
+</footer>
+  
+</body>
+</html>
