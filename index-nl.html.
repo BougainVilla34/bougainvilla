@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BougainVilla San Teodoro | Holiday Home in Sardinia</title>
+    
+ <meta name="description" content="BougainVilla in San Teodoro, Sardinia. A welcoming holiday home near beautiful beaches and La Cinta beach.">
+    
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #45433d;
+  background: #fdfbf7;
+  line-height: 1.75;
+}
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 253, 249, 0.97);
+      border-bottom: 1px solid #eee5dc;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #4d5144;
+      text-decoration: none;
+      margin: 0 13px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(
+        rgba(255, 250, 244, 0.72),
+        rgba(255, 250, 244, 0.72)
+      );
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+   .hero h1 {
+  font-size: clamp(48px, 8vw, 82px);
+  font-weight: normal;
+  color: #68765e;
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.15;
+}
+    
+    .hero h2 {
+  font-size: clamp(22px, 4vw, 34px);
+  font-weight: normal;
+  color: #68765e;
+  margin: 8px 0 25px;
+  line-height: 1.4;
+}
+    
+   .hero p {
+  font-size: clamp(16px, 2vw, 19px);
+  max-width: 650px;
+  margin: 0 auto 14px;
+  line-height: 1.8;
+}
+    
+    .button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 32px;
+  background: #68765e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  box-shadow: 0 5px 15px rgba(50, 60, 43, 0.16);
+  transition: all 0.25s ease;
+}
+    
+.button:hover {
+  background: #596851;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(50, 60, 43, 0.20);
+}
+    
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 25px;
+    }
+
+   .section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  color: #68765e;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+    
+   .section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #77766e;
+  font-size: 17px;
+  line-height: 1.7;
+}
+    
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+    
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 0 5px 16px rgba(50, 60, 43, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 9px 22px rgba(50, 60, 43, 0.17);
+}
+    
+    .photo-placeholder {
+      height: 420px;
+      border-radius: 18px;
+      background: linear-gradient(
+        rgba(236, 226, 216, 0.9),
+        rgba(236, 226, 216, 0.9)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #80695e;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      background: #f2f4ee;
+      text-align: center;
+      max-width: none;
+    }
+
+    .highlight h2 {
+      color: #66745f;
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .service {
+      background: white;
+      padding: 22px 15px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      margin: 5px 0;
+      color: #66745f;
+      font-size: 19px;
+      font-weight: normal;
+    }
+
+    .villa {
+      background: #eef1eb;
+      max-width: none;
+    }
+
+    .villa-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .villa-box {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    }
+
+    .villa-photo {
+      height: 350px;
+      background: linear-gradient(
+        rgba(235, 229, 216, 0.9),
+        rgba(235, 229, 216, 0.9)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #80695e;
+      font-size: 20px;
+    }
+
+    .villa-content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .villa-content h2 {
+      font-size: 36px;
+      font-weight: normal;
+      color: #66745f;
+      margin-top: 0;
+    }
+
+    .location {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .location h2 {
+      font-size: 36px;
+      font-weight: normal;
+      color: #66745f;
+    }
+
+    .contact {
+      background: #eef1eb;
+      max-width: none;
+      text-align: center;
+    }
+
+    .contact-inner {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact h2 {
+      color: #66745f;
+      font-size: 38px;
+      font-weight: normal;
+    }
+
+    .whatsapp {
+      background: #4d9b69;
+    }
+
+    footer {
+      background: #4d5144;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      nav {
+        padding: 12px 5px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 65vh;
+        padding: 60px 20px;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+     .section-title {
+        font-size: 27px;
+        line-height: 1.3;
+      }
+      
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+  .photo-placeholder,
+  .villa-photo {
+  height: auto;
+  min-height: 280px;
+  box-sizing: border-box;
+}
+      
+  .gallery {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.gallery img {
+  height: 240px;
+}
+      
+      .villa-content {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        font-size: 11px;
+        margin: 0 3px;
+      }
+    }
+      .language-menu {
+  position: relative;
+  display: inline-block;
+}
+.language-button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+.language-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.language-options a {
+  display: block;
+  padding: 10px 12px;
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.language-options a:hover {
+  background: #f2f2f2;
+}
+.language-menu:hover .language-options,
+.language-menu:focus-within .language-options {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+
+ <nav>
+  <a href="#bougainvilla">BougainVilla</a>
+  <a href="#servizi">Services</a>
+  <a href="#smeralda">Villino Smeralda</a>
+  <a href="san-teodoro-en.html">San Teodoro</a>
+  <a href="#contatti">Contact</a>
+  <div class="language-menu">
+    <button type="button" class="language-button">🌐 Lingua ▾</button>
+    <div class="language-options">
+      <a href="index.html">🇮🇹 Italiano</a>
+      <a href="index-en.html">🇬🇧 English</a>
+    </div>
+  </div>
+</nav>  
+  
+  <header class="hero">
+    <div class="hero-content">
+      <h1>BougainVilla</h1>
+<h2>Holiday Home in San Teodoro</h2>
+<p>
+  BougainVilla is located in San Teodoro, between Gallura and Baronia,
+  in the heart of north-eastern Sardinia. Nestled at the foot of
+  Monte Nieddu, it is the ideal starting point for discovering
+  the beaches, nature and culture of this beautiful corner of Sardinia.
+</p>
+
+<a href="#bougainvilla" class="button">
+  Discover BougainVilla
+</a>
+    </div>
+  </header>
+
+  <section id="bougainvilla">
+
+  <h2 class="section-title">
+    Welcome to BougainVilla
+  </h2>
+
+  <p class="section-subtitle">
+    Your space, your holiday
+  </p>
+
+  <div class="intro">
+
+    <p>
+      BougainVilla is an independent apartment where you can enjoy
+      your holiday in complete freedom, with welcoming interiors
+      and outdoor spaces to enjoy at any time of day.
+    </p>
+
+    <p>
+      The garden, hammock, terrace with its outdoor lounge area
+      and barbecue are perfect for breakfast outside, a relaxing
+      break after a day at the beach or an evening with friends.
+    </p>
+
+    <p>
+      The fully equipped kitchen, Wi-Fi and air conditioning
+      complete the amenities designed for your stay.
+    </p>
+
+  </div>
+
+</section>
+
+<section>
+
+  <img src="bougainvilla-principale.jpg"
+
+       alt="BougainVilla a San Teodoro"
+
+       style="width:100%; height:auto; display:block; border-radius:18px;">
+
+</section>
+
+<section>
+
+  <h2 class="section-title">
+    Beaches, Nature and Local Life
+  </h2>
+
+  <div class="intro">
+
+    <p>
+      Located at the foot of Monte Nieddu, between Gallura and Baronia,
+      BougainVilla is the ideal starting point for discovering the
+      beaches, landscapes and traditions of north-eastern Sardinia.
+    </p>
+
+    <p>
+      The centre of San Teodoro offers lovely opportunities for walks,
+      restaurants, cafés and lively summer evenings. Close to the
+      house, you will also find a supermarket, a playground open
+      during the summer season and a free outdoor fitness area.
+    </p>
+
+  </div>
+
+  <h2 class="section-title">
+    Perfect for Families, Couples and Friends
+  </h2>
+
+  <div class="intro">
+
+    <p>
+      BougainVilla offers an independent space to share with your
+      loved ones, while giving you the freedom to plan each day
+      at your own pace.
+    </p>
+
+    <p>
+      Families can enjoy the outdoor spaces, couples can find
+      moments of peace and quiet, and groups of friends can
+      explore San Teodoro's evening life.
+    </p>
+
+    <p>
+      After a day out, the garden and terrace are perfect for
+      getting together and enjoying a little more of the day.
+    </p>
+
+  </div>
+
+</section>
+  
+<section class="highlight">
+
+  <h2>
+    Your Holiday Starts Here
+  </h2>
+
+  <p class="intro">
+    The joy of discovering Sardinia and the freedom
+    to feel at home.
+  </p>
+
+  <a href="#contatti" class="button">
+    Information and Bookings
+  </a>
+
+</section>
+  
+  <section id="servizi">
+
+   <h2 class="section-title">
+  Our Amenities
+</h2>
+
+<p class="section-subtitle">
+  Everything you need for a pleasant and relaxing holiday.
+</p>
+    <div class="services">
+
+  <div class="service">
+  <div class="service-icon">📶</div>
+  <h3>Wi-Fi</h3>
+  <p>Wi-Fi connection available for guests.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">🍳</div>
+  <h3>Fully Equipped Kitchen</h3>
+  <p>Everything you need to feel at home during your stay.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">🔥</div>
+  <h3>Barbecue</h3>
+  <p>A perfect space for outdoor grilling and dining.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">🌿</div>
+  <h3>Large Garden</h3>
+  <p>A spacious green area with a hammock for pure relaxation.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">☀️</div>
+  <h3>Terrace</h3>
+  <p>A terrace with outdoor seating, perfect for relaxing in the fresh air.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">🚗</div>
+  <h3>Parking</h3>
+  <p>Parking available for guests.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">❄️</div>
+  <h3>Air Conditioning</h3>
+  <p>Stay comfortable even on the hottest days.</p>
+</div>
+
+<div class="service">
+  <div class="service-icon">🏖️</div>
+  <h3>Close to the Beaches</h3>
+  <p>A convenient location for enjoying the sea around San Teodoro.</p>
+</div>
+      
+    </div>
+
+  <div class="gallery">
+
+  <img src="giardino.JPG" alt="Garden">
+
+  <img src="giardino2.JPG" alt="Garden">
+
+  <img src="terrazza2.JPG" alt="Terrace">
+
+  <img src="soggiorno e terrazzo esterno.JPG" alt="Living room and outdoor terrace">
+
+  <img src="soggiorno2.JPG" alt="Living room">
+
+  <img src="soggiorno3.JPG" alt="Living room">
+
+  <img src="cucina.JPG" alt="Fully equipped kitchen">
+
+  <img src="camera matrimoniale.JPG" alt="Double bedroom">
+
+</div>
+    
+  </section>
+
+ <section>
+
+  <h2 class="section-title">
+    The Sea of San Teodoro
+  </h2>
+
+  <p class="section-subtitle">
+    Beautiful beaches and crystal-clear waters just minutes from BougainVilla.
+  </p>
+
+  <img src="lacinta1.jpg" alt="La Cinta Beach"
+       style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+  <img src="cala suaraccia.jpg" alt="Cala Suaraccia Beach"
+       style="width:100%; height:auto; display:block; border-radius:18px; margin-bottom:30px;">
+
+</section>
+  
+  <section id="smeralda" class="villa">
+
+  <div class="villa-inner">
+
+    <h2 class="section-title">
+      Discover Villino Smeralda
+    </h2>
+
+    <p class="section-subtitle">
+      An independent holiday home, separate from BougainVilla.
+    </p>
+
+    <div class="villa-box">
+
+      <div class="villa-photo">
+        <img src="foto principale Villino Smeralda.jpeg" alt="Villino Smeralda"
+             style="width:100%; height:350px; object-fit:cover; display:block;">
+      </div>
+
+      <div class="gallery">
+
+        <img src="cucinaesala.jpg" alt="Villino Smeralda kitchen and living room">
+        <img src="Camera mattrimoniale Villino Smeralda.jpeg" alt="Villino Smeralda double bedroom">
+        <img src="Camera singola Villino Smeralda.jpeg" alt="Villino Smeralda single bedroom">
+        <img src="Camera piazza e mezza Villino Smeralda.jpeg" alt="Villino Smeralda bedroom with a small double bed">
+        <img src="Giardino Villino Smeralda.jpeg" alt="Villino Smeralda garden">
+        <img src="Giardino 1 Villino Smeralda.jpeg" alt="Villino Smeralda garden">
+        <img src="Giardino 2 Villino Smeralda.jpeg" alt="Villino Smeralda garden">
+
+      </div>
+
+      <div class="villa-content">
+
+        <h2>Villino Smeralda</h2>
+
+        <p>
+          A second independent holiday home in San Teodoro,
+          ideal for guests looking for space, comfort and privacy.
+        </p>
+
+        <p>
+          This semi-detached end-unit house features a living room
+          with a fully equipped kitchen, three bedrooms, two bathrooms
+          and spacious outdoor areas.
+        </p>
+
+        <h3>Accommodation</h3>
+
+        <p>
+          <strong>Living room and kitchen:</strong><br>
+          Five-burner gas hob, kettle, coffee machine, oven,
+          small electric oven, fridge, freezer, air fryer
+          and air conditioning.
+        </p>
+
+        <p>
+          <strong>Double bedroom:</strong><br>
+          Double bed, wardrobe and air conditioning.
+        </p>
+
+        <p>
+          <strong>Single bedroom:</strong><br>
+          Single bed and air conditioning.
+        </p>
+
+        <p>
+          <strong>Third bedroom:</strong><br>
+          Small double bed and an en-suite service bathroom.
+        </p>
+
+        <p>
+          <strong>Bathrooms:</strong><br>
+          One main bathroom with toilet and shower, plus a second
+          service bathroom without a shower.
+        </p>
+
+        <h3>Outdoor Spaces and Amenities</h3>
+
+        <p>
+          Large covered veranda, spacious garden, outdoor shower,
+          washing machine, gas water heater and free public parking
+          outside the property.
+        </p>
+
+        <a href="#contatti" class="button">
+          Information and Bookings
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  
+  <section id="san-teodoro">
+
+  <div class="location">
+
+    <h2>
+      San Teodoro and La Cinta
+    </h2>
+
+    <p>
+      San Teodoro is one of Sardinia's most popular destinations,
+      famous for its crystal-clear sea, white sandy beaches
+      and unspoilt nature.
+    </p>
+
+    <p>
+      One of the area's highlights is La Cinta, one of the
+      best-known and most beautiful beaches in the region.
+    </p>
+
+    <p>
+      During your stay, you can discover the sea, explore
+      San Teodoro town centre, enjoy its restaurants and bars,
+      and discover the area's many natural attractions.
+    </p>
+
+  </div>
+
+</section>
+  
+ <section id="contatti" class="contact">
+
+  <div class="contact-inner">
+
+    <h2>
+      Contact Us
+    </h2>
+
+    <p>
+      <strong>BOUGAINVILLA</strong><br>
+      Via Sardegna 34, San Teodoro
+    </p>
+
+    <p>
+      <strong>Villino Smeralda</strong><br>
+      Vico Padova 9, San Teodoro
+    </p>
+
+    <p>
+      <strong>Anto</strong><br>
+      <a href="tel:+393489542642">+39 348 954 2642</a>
+    </p>
+
+    <p>
+      <strong>Peppe</strong><br>
+      <a href="tel:+393496492231">+39 349 649 2231</a>
+    </p>
+
+    <p>
+      <strong>Email</strong><br>
+      <a href="mailto:BouganVillasanteodoro@outlook.com">
+        BouganVillasanteodoro@outlook.com
+      </a>
+    </p>
+
+    <p>
+      <strong>BougainVilla CIN</strong><br>
+      IT090092C2000T7070
+    </p>
+
+    <p>
+      <strong>Villino Smeralda CIN</strong><br>
+    </p>
+
+    <p>
+      Contact us for availability, information and bookings.
+    </p>
+
+    <a href="https://wa.me/393489542642" class="button whatsapp">
+      💬 WhatsApp Anto
+    </a>
+
+    <a href="https://wa.me/393496492231" class="button whatsapp">
+      💬 WhatsApp Peppe
+    </a>
+
+    <br><br>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Bougainvilla%2C%20Via%20Sardegna%2034%2C%20San%20Teodoro"
+       class="button">
+      📍 Google Maps
+    </a>
+
+    <a href="https://www.instagram.com/santeodoroholidays/"
+       class="button">
+      📷 Instagram
+    </a>
+
+  </div>
+
+</section>
+  
+  <footer>
+
+  <p>
+    ©️ BougainVilla San Teodoro
+  </p>
+
+  <p>
+    Holiday Home · San Teodoro · Sardinia
+  </p>
+
+  <p>
+    Our holiday home is officially registered and complies with
+    the applicable regulations. The property's National
+    Identification Code (CIN) is: IT090092C2000T7070.
+    This code helps ensure transparency and compliance with
+    the applicable legal requirements.
+  </p>
+
+  <p>
+    Villino Smeralda CIN:
+    IT090092C2000U7327
+  </p>
+
+</footer>
+  
+  <script>
+document.querySelectorAll('.gallery img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    const overlay = document.createElement('div');
+
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.background = 'rgba(0,0,0,0.9)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = '9999';
+    overlay.style.cursor = 'pointer';
+    overlay.style.padding = '20px';
+
+    const bigImage = document.createElement('img');
+    bigImage.src = img.src;
+    bigImage.style.maxWidth = '95%';
+    bigImage.style.maxHeight = '95%';
+    bigImage.style.objectFit = 'contain';
+    bigImage.style.borderRadius = '12px';
+
+    overlay.appendChild(bigImage);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', function() {
+      overlay.remove();
+    });
+  });
+});
+</script>
+<script>
+  const languageButton = document.querySelector('.language-button');
+  const languageOptions = document.querySelector('.language-options');
+  languageButton.addEventListener('click', function () {
+    const isOpen = languageOptions.style.display === 'block';
+    languageOptions.style.display = isOpen ? 'none' : 'block';
+  });
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.language-menu')) {
+      languageOptions.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
